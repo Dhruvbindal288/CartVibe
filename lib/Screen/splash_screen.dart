@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:cartvibe/Screen/login_screen.dart';
-import 'package:cartvibe/Screen/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 5), () {
       Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return const WelcomeScreen();
+        return const LoginScreen();
       }));
     });
   }

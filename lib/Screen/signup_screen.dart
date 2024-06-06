@@ -3,6 +3,8 @@ import 'package:cartvibe/Widgets/custom-textField.dart';
 import 'package:cartvibe/Widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
+import '../Widgets/bottom_nav_bar.dart';
+
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 
@@ -15,23 +17,30 @@ class SignUpScreen extends StatelessWidget {
         child: BgContainer(
           Column(
             children: [
-              CutomTextField(
+              CustomTextField(
                   textEditingController: emailController,
                   isShow: false,
                   text: 'Email'),
-              CutomTextField(
+              CustomTextField(
                   textEditingController: emailController,
                   isShow: true,
                   text: 'Username'),
-              CutomTextField(
+              CustomTextField(
                   textEditingController: emailController,
                   isShow: false,
                   text: 'Phone Number'),
-              CutomTextField(
+              CustomTextField(
                   textEditingController: emailController,
                   isShow: true,
                   text: 'Password'),
-              CustomButton(text: 'SignUp', onPressed: () {}),
+              CustomButton(
+                  text: 'SignUp',
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const BottomNavBar();
+                    }));
+                  }),
               const SizedBox(
                 height: 20,
               ),

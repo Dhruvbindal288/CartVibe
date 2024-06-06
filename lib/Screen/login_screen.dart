@@ -16,11 +16,11 @@ class LoginScreen extends StatelessWidget {
         child: BgContainer(
           Column(
             children: [
-              CutomTextField(
+              CustomTextField(
                   textEditingController: emailController,
                   isShow: false,
                   text: 'Email'),
-              CutomTextField(
+              CustomTextField(
                   textEditingController: emailController,
                   isShow: true,
                   text: 'Password'),
