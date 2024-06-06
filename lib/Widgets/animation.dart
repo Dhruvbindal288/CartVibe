@@ -16,7 +16,7 @@ class _AnimationSlider extends State<AnimationSlider> {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return SizedBox(
-      height: screenHeight * 0.28,
+      height: screenHeight * 0.26,
       width: screenWidth * 0.94,
       child: AnotherCarousel(
         images: const [
@@ -25,7 +25,7 @@ class _AnimationSlider extends State<AnimationSlider> {
           AssetImage('assets/Sliderimage.png')
         ],
         borderRadius: true,
-        radius: const Radius.circular(35),
+        radius: const Radius.circular(20),
         boxFit: BoxFit.contain,
         autoplay: false,
         dotBgColor: Colors.transparent,

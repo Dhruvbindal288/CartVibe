@@ -26,9 +26,18 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.blue,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Expanded(child: Text('CartVibe')),
-          Expanded(child: Text('Made By Dhruv Bindal')),
+          Text(
+            'CartVibe',
+            style: TextStyle(
+                fontWeight: FontWeight.w900, fontSize: 24, color: Colors.white),
+          ),
+          Text(
+            'Made By Dhruv Bindal',
+            style: TextStyle(
+                fontWeight: FontWeight.w800, fontSize: 18, color: Colors.white),
+          ),
         ],
       ),
     );
