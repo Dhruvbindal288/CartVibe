@@ -1,11 +1,10 @@
-import 'package:cartvibe/Screen/signup_screen.dart';
 import 'package:cartvibe/Widgets/bg_container.dart';
 import 'package:cartvibe/Widgets/custom-textField.dart';
 import 'package:cartvibe/Widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +22,16 @@ class LoginScreen extends StatelessWidget {
               CutomTextField(
                   textEditingController: emailController,
                   isShow: true,
+                  text: 'Username'),
+              CutomTextField(
+                  textEditingController: emailController,
+                  isShow: false,
+                  text: 'Phone Number'),
+              CutomTextField(
+                  textEditingController: emailController,
+                  isShow: true,
                   text: 'Password'),
-              Align(
-                alignment: Alignment.topRight,
-                child: TextButton(
-                  onPressed: () {},
-                  child: const Text('Forget Password?'),
-                ),
-              ),
-              CustomButton(text: 'Log in', onPressed: () {}),
+              CustomButton(text: 'SignUp', onPressed: () {}),
               const SizedBox(
                 height: 20,
               ),
@@ -39,17 +39,10 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Don\'t Have An Account?',
+                    'Already Have An Account?',
                     style: TextStyle(fontWeight: FontWeight.w400),
                   ),
-                  TextButton(
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return const SignUpScreen();
-                        }));
-                      },
-                      child: const Text('Sign Up'))
+                  TextButton(onPressed: () {}, child: const Text('Log in'))
                 ],
               )
             ],
