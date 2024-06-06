@@ -20,9 +20,9 @@ class _AnimationSlider extends State<AnimationSlider> {
       width: screenWidth * 0.94,
       child: AnotherCarousel(
         images: const [
-          AssetImage('assets/sliderimage1.jpg'),
-          AssetImage('assets/sliderimage1.jpg'),
-          AssetImage('assets/sliderimage1.jpg')
+          AssetImage('assets/Sliderimage.png'),
+          AssetImage('assets/Sliderimage.png'),
+          AssetImage('assets/Sliderimage.png')
         ],
         borderRadius: true,
         radius: const Radius.circular(35),
